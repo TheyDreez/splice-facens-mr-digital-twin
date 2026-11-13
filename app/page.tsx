@@ -1632,7 +1632,7 @@ export default function FacensHighEndDigitalShadow() {
     window.addEventListener('mousemove', onPointerMove);
     window.addEventListener('mouseup', onPointerUp);
     domElem.addEventListener('wheel', onWheel);
-    domElem.addEventListener('contextmenu', (e) => e.preventDefault());
+    domElem.addEventListener('contextmenu', (e: MouseEvent) => e.preventDefault());
 
     // 13. LOOP DE FÍSICA E RENDERIZAÇÃO 60 FPS
     let animFrameId: number;
